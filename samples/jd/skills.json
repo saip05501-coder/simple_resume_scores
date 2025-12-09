@@ -1,0 +1,72 @@
+{
+  "ml_engineer": [
+    "Python",
+    "Scikit-learn",
+    "TensorFlow",
+    "PyTorch",
+    "Data Preprocessing",
+    "Feature Engineering",
+    "Model Training & Evaluation",
+    "ML Algorithms",
+    "APIs for model deployment",
+    "Git & Version Control"
+  ],
+  "backend_developer": [
+    "Python",
+    "Java",
+    "Node.js",
+    "Django",
+    "Flask",
+    "SQL",
+    "NoSQL",
+    "REST APIs",
+    "GraphQL",
+    "Docker",
+    "Git & Version Control",
+    "AWS",
+    "Azure",
+    "GCP"
+  ],
+  "data_analyst": [
+    "Python",
+    "R",
+    "SQL",
+    "Excel",
+    "Pandas",
+    "NumPy",
+    "Data Visualization",
+    "Tableau",
+    "Power BI",
+    "Statistics"
+  ],
+  "devops_engineer": [
+    "Linux",
+    "Shell Scripting",
+    "Docker",
+    "Kubernetes",
+    "CI/CD",
+    "Jenkins",
+    "GitHub Actions",
+    "AWS",
+    "Azure",
+    "GCP",
+    "Monitoring",
+    "Logging",
+    "Git & Version Control"
+  ],
+  "web_developer": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "Angular",
+    "Vue.js",
+    "Node.js",
+    "Django",
+    "Flask",
+    "REST APIs",
+    "SQL",
+    "NoSQL",
+    "Git & Version Control"
+  ]
+}

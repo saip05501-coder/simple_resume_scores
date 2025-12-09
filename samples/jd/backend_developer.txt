@@ -1,0 +1,21 @@
+Job Role: Backend Developer
+
+Required Skills:
+- Python / Java / Node.js
+- REST API Development
+- Database Knowledge (MySQL, MongoDB, PostgreSQL)
+- Authentication & Authorization
+- Basic Cloud Knowledge (AWS/Azure)
+- Git & GitHub
+- API Security Basics
+- MVC Framework (Django, Flask, Express.js)
+
+Responsibilities:
+- Develop backend logic and APIs.
+- Create scalable database models.
+- Integrate authentication systems.
+- Improve application performance.
+- Work with frontend and DevOps teams.
+
+Experience Required:
+0–2 years (Fresher-friendly)

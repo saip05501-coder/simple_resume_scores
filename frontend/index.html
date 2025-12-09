@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Resume Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        h1 { text-align: center; }
+        label { display: block; margin-top: 20px; font-weight: bold; }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .results {
+            margin-top: 30px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .results h3 { margin-top: 0; }
+        ul { padding-left: 20px; }
+    </style>
+</head>
+<body>
+
+<h1>Smart Resume Checker</h1>
+
+<form id="resumeForm">
+    <label for="resume">Upload Resume (PDF/DOCX):</label>
+    <input type="file" id="resume" name="resume" required>
+
+    <label for="jobRole">Select Job Role:</label>
+<select id="jobRole" name="jobRole" required>
+    <option value="">-- Select Job Role --</option>
+    
+    <option value="data_analyst">Data Analyst</option>
+    <option value="ml_engineer">Machine Learning Engineer</option>
+    <option value="backend_developer">Backend Developer</option>
+    <option value="web_developer">Web Developer</option>
+    <option value="devops_engineer">DevOps Engineer</option>
+</select>
+
+    <button type="submit">Check Resume</button>
+</form>
+
+<div class="results" id="results" style="display:none;">
+    <h3>Results:</h3>
+    <p><strong>Resume Skills:</strong> <span id="resumeSkills"></span></p>
+    <p><strong>Matched Skills:</strong> <span id="matchedSkills"></span></p>
+    <p><strong>Missing Skills:</strong> <span id="missingSkills"></span></p>
+    <p><strong>Score:</strong> <span id="score"></span>%</p>
+</div>
+
+<script>
+document.getElementById("resumeForm").addEventListener("submit", async function(e){
+    e.preventDefault();
+
+    const fileInput = document.getElementById("resume");
+    const jobRole = document.getElementById("jobRole").value;
+
+    if (!fileInput.files[0] || !jobRole) {
+        alert("Please select a resume and a job role.");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", fileInput.files[0]);
+    formData.append("job_role", jobRole);
+
+    try {
+        const response = await fetch("http://127.0.0.1:5000/upload", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.error) {
+            alert(data.error);
+            return;
+        }
+
+        document.getElementById("results").style.display = "block";
+        document.getElementById("resumeSkills").innerText = data.resume_skills.join(", ");
+        document.getElementById("matchedSkills").innerText = data.matched_skills.join(", ");
+        document.getElementById("missingSkills").innerText = data.missing_skills.join(", ");
+        document.getElementById("score").innerText = data.score.toFixed(2);
+
+    } catch (err) {
+        alert("Error connecting to server. Make sure backend is running.");
+        console.error(err);
+    }
+});
+</script>
+
+</body>
+</html>

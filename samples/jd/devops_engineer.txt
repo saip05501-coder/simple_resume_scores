@@ -1,0 +1,21 @@
+Job Role: DevOps Engineer
+
+Required Skills:
+- Linux Basics
+- Git & GitHub
+- CI/CD Pipelines (Jenkins/GitHub Actions)
+- Docker
+- Docker Compose
+- Kubernetes (Basics)
+- AWS (EC2, S3, IAM)
+- Monitoring Tools (Prometheus/Grafana)
+
+Responsibilities:
+- Setup and maintain CI/CD pipelines.
+- Manage containers and deployments.
+- Automate infrastructure using DevOps tools.
+- Monitor system performance.
+- Collaborate with developers for smooth deployment.
+
+Experience Required:
+0–2 years (Fresher-friendly)

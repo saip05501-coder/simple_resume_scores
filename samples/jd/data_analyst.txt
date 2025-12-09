@@ -1,0 +1,22 @@
+Job Role: Data Analyst
+
+Required Skills:
+- Python
+- SQL
+- Pandas
+- NumPy
+- Excel
+- Data Cleaning
+- Data Visualization
+- Tableau or Power BI
+- Statistical Analysis
+
+Responsibilities:
+- Collect, clean, and analyze structured and unstructured data.
+- Build dashboards and reports for business decision-making.
+- Use SQL queries to extract insights from databases.
+- Perform exploratory data analysis (EDA).
+- Support business teams with insights and automation.
+
+Experience Required:
+0–2 years (Fresher-friendly)

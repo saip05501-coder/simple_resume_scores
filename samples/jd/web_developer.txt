@@ -1,0 +1,21 @@
+Job Role: Web Developer
+
+Required Skills:
+- HTML
+- CSS
+- JavaScript
+- React or Angular
+- Node.js Basics
+- Responsive UI Design
+- Git & GitHub
+- REST APIs
+
+Responsibilities:
+- Develop responsive and user-friendly web pages.
+- Work with front-end frameworks like React.
+- Integrate frontend with backend APIs.
+- Debug and optimize web performance.
+- Collaborate with UI/UX teams.
+
+Experience Required:
+0–2 years (Fresher-friendly)

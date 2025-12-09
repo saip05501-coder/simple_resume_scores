@@ -1,0 +1,22 @@
+Job Role: Machine Learning Engineer
+
+Required Skills:
+- Python
+- Scikit-learn
+- TensorFlow or PyTorch
+- Data Preprocessing
+- Feature Engineering
+- Model Training & Evaluation
+- ML Algorithms (Regression, Classification, Clustering)
+- APIs for model deployment (FastAPI/Flask)
+- Git & Version Control
+
+Responsibilities:
+- Build and optimize machine learning models.
+- Preprocess large datasets and engineer features.
+- Train, validate, and deploy ML models into production.
+- Work with cross-functional teams on AI solutions.
+- Monitor and improve model performance.
+
+Experience Required:
+0–2 years (Fresher-friendly)
